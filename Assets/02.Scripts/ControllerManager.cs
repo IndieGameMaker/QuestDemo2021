@@ -37,6 +37,20 @@ public class ControllerManager : MonoBehaviour
             Debug.Log("Right IndexTrigger Touch !!!");
         }
 
+        // Indivisual 방식
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch))
+        {
+            Debug.Log("Left HandTrigger Grab");
+        }
+
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.RTouch))
+        {
+            Debug.Log("Right HandTrigger Grab");
+            //Haptic
+        }
+
     }
+
+    
         
 }
