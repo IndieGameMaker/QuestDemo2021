@@ -128,9 +128,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets:
-  - {fileID: 11400000, guid: 555b2c0a9da5e2744b9fe3fb017ebf2c, type: 2}
-  - {fileID: -5431576838625056096, guid: ad2c05aab5efd2b459b896e327333d88, type: 2}
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -149,6 +147,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.MethodGames.QuestDemo
+    Standalone: com.MethodGames.QuestDemo
   buildNumber:
     Standalone: 0
     iPhone: 0
