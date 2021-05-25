@@ -47,10 +47,16 @@ public class ControllerManager : MonoBehaviour
         {
             Debug.Log("Right HandTrigger Grab");
             //Haptic
+            StartCoroutine(Haptic(0.5f));
         }
 
     }
 
-    
+    IEnumerator Haptic(float duration)
+    {
+        OVRInput.SetControllerVibration(0.8f, 0.8f, OVRInput.Controller.RTouch);
+        yield return new WaitForSeconds(duration);
+        OVRInput.SetControllerVibration(0, 0, OVRInput.Controller.RTouch);
+    }
         
 }
